@@ -1,0 +1,11 @@
+{
+  "cleanUrls": true,
+  "headers": [],
+  "redirects": [
+    {
+      "source": "/awake-filmforge-preview/pricing",
+      "destination": "/awake-filmforge-preview/prijzen",
+      "permanent": false
+    }
+  ]
+}
