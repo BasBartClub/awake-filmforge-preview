@@ -61,3 +61,12 @@
 .ffq-hidden{display:none!important}
 @media (max-width:960px){.ffq-grid2,.ffq-stats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
 @media (max-width:640px){.ffq-grid2,.ffq-stats{grid-template-columns:minmax(0,1fr)}.ffq-panel{padding:1.25rem}}
+
+/* polish 2026-11-06 */
+.ffq-table td .ffq-btn{white-space:nowrap;padding:.5rem .95rem;min-height:2.5rem;font-size:.8rem}
+.ffq-table .ffq-select{min-width:9rem}
+.ffq-table td{vertical-align:middle}
+.ffq-panel:has(> .ffq-table),.ffq-panel:has(table){overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ffq-demo code{word-break:break-all}
+.ffq-input,.ffq-select,.ffq-textarea{min-height:2.9rem;font-size:16px}
+@media (max-width:767px){.ffq-table{min-width:34rem}.ffq-btn{min-height:2.75rem}}

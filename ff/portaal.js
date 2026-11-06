@@ -30,8 +30,8 @@
           status: 'revisie',
           brief: 'Korte AI-promo voor social: 30 seconden, merktonaal, eindshot met logo. Voorbeeldproject voor deze preview.',
           deliverables: [
-            { name: 'First cut v1 (placeholder)', url: '/awake-filmforge-preview/ff/og-home.jpg' },
-            { name: 'Revisie notes (dummy)', url: '/awake-filmforge-preview/ff/ff-logo.svg' },
+            { name: 'First cut v1 (placeholder)', url: BASE + '/ff/og-home.jpg' },
+            { name: 'Revisie notes (dummy)', url: BASE + '/ff/ff-logo.svg' },
           ],
           notes: [
             { from: 'studio', at: '2026-11-01T10:00:00+01:00', text: 'First cut staat klaar voor review.' },
@@ -97,7 +97,7 @@
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
-      .replace(/awake-filmforge-preview/"/g, '&quot;');
+      .replace(/"/g, '&quot;');
   }
   function fmt(iso) {
     try {
@@ -111,10 +111,10 @@
     }
   }
   function path() {
-    return location.pathname.replace(/\/$/, '') || '/awake-filmforge-preview/';
+    return location.pathname.replace(/\/$/, '') || '/';
   }
   function go(href) {
-    if (href.startsWith('/awake-filmforge-preview/') && BASE) location.href = BASE + href;
+    if (href.startsWith('/') && BASE) location.href = BASE + href;
     else location.href = href;
   }
   function pill(status) {
@@ -137,11 +137,11 @@
   function requireRole(role) {
     const sess = getSession();
     if (!sess) {
-      go('/awake-filmforge-preview/portaal/');
+      go('/portaal/');
       return null;
     }
     if (sess.role !== role) {
-      go(sess.role === 'admin' ? '/awake-filmforge-preview/portaal/admin/' : '/awake-filmforge-preview/portaal/klant/');
+      go(sess.role === 'admin' ? '/portaal/admin/' : '/portaal/klant/');
       return null;
     }
     return sess;
@@ -150,7 +150,7 @@
   function mountLogin(root) {
     const sess = getSession();
     if (sess) {
-      go(sess.role === 'admin' ? '/awake-filmforge-preview/portaal/admin/' : '/awake-filmforge-preview/portaal/klant/');
+      go(sess.role === 'admin' ? '/portaal/admin/' : '/portaal/klant/');
       return;
     }
     root.innerHTML = `
@@ -200,7 +200,7 @@
         return;
       }
       setSession({ email, role: u.role, name: u.name, at: Date.now() });
-      go(u.role === 'admin' ? '/awake-filmforge-preview/portaal/admin/' : '/awake-filmforge-preview/portaal/klant/');
+      go(u.role === 'admin' ? '/portaal/admin/' : '/portaal/klant/');
     });
   }
 
@@ -228,7 +228,7 @@
   function bindLogout(root) {
     root.querySelector('#ffq-out')?.addEventListener('click', () => {
       setSession(null);
-      go('/awake-filmforge-preview/portaal/');
+      go('/portaal/');
     });
   }
 
