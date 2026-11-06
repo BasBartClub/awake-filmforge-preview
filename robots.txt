@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://basbartclub.github.io/awake-filmforge-preview/sitemap.xml
+Sitemap: https://awake-filmforge-preview.vercel.app/sitemap.xml

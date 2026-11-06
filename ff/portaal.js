@@ -97,7 +97,7 @@
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+      .replace(/awake-filmforge-preview/"/g, '&quot;');
   }
   function fmt(iso) {
     try {
@@ -111,10 +111,10 @@
     }
   }
   function path() {
-    return location.pathname.replace(/\/$/, '') || '/';
+    return location.pathname.replace(/\/$/, '') || '/awake-filmforge-preview/';
   }
   function go(href) {
-    if (href.startsWith('/') && BASE) location.href = BASE + href;
+    if (href.startsWith('/awake-filmforge-preview/') && BASE) location.href = BASE + href;
     else location.href = href;
   }
   function pill(status) {
@@ -183,8 +183,8 @@
               <code>klant@filmforge.nl</code> / <code>FilmForge-Klant-2026</code>
             </div>
             <div class="ffq-row">
-              <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/prijzen">Prijzen</a>
-              <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/contacts">Contact</a>
+              <a class="ffq-btn ghost" href="${BASE}/prijzen">Prijzen</a>
+              <a class="ffq-btn ghost" href="${BASE}/contacts">Contact</a>
             </div>
           </div>
         </div>
@@ -214,8 +214,8 @@
           <span class="ffq-muted">${esc(sess.email)}</span>
         </div>
         <div class="ffq-row">
-          <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/prijzen">Prijzen</a>
-          <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/contacts">Contact</a>
+          <a class="ffq-btn ghost" href="${BASE}/prijzen">Prijzen</a>
+          <a class="ffq-btn ghost" href="${BASE}/contacts">Contact</a>
           <button class="ffq-btn danger" type="button" id="ffq-out">Uitloggen</button>
         </div>
       </div>

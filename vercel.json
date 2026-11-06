@@ -3,7 +3,7 @@
   "headers": [],
   "redirects": [
     {
-      "source": "/awake-filmforge-preview/pricing",
+      "source": "/pricing",
       "destination": "/awake-filmforge-preview/prijzen",
       "permanent": false
     },

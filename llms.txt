@@ -4,18 +4,18 @@
 FilmForge maakt AI-films, bedrijfsvideo’s, websites en webshops. AI maakt het beeld; editors maken de film.
 
 Contact: daniel@filmforge.nl · 06 22 88 44 63 · KvK 83071830
-Site: https://basbartclub.github.io/awake-filmforge-preview
+Site: https://awake-filmforge-preview.vercel.app
 Production brand site: https://www.filmforge.nl/
 
 ## Pages
-- [Home](https://basbartclub.github.io/awake-filmforge-preview/)
-- [Diensten](https://basbartclub.github.io/awake-filmforge-preview/services)
-- [Projecten](https://basbartclub.github.io/awake-filmforge-preview/projects)
-- [Prijzen](https://basbartclub.github.io/awake-filmforge-preview/prijzen)
-- [Blog](https://basbartclub.github.io/awake-filmforge-preview/blog)
-- [Portfolio](https://basbartclub.github.io/awake-filmforge-preview/portfolio)
-- [Mijn FilmForge](https://basbartclub.github.io/awake-filmforge-preview/portaal)
-- [Contact](https://basbartclub.github.io/awake-filmforge-preview/contacts)
+- [Home](https://awake-filmforge-preview.vercel.app/)
+- [Diensten](https://awake-filmforge-preview.vercel.app/services)
+- [Projecten](https://awake-filmforge-preview.vercel.app/projects)
+- [Prijzen](https://awake-filmforge-preview.vercel.app/prijzen)
+- [Blog](https://awake-filmforge-preview.vercel.app/blog)
+- [Portfolio](https://awake-filmforge-preview.vercel.app/portfolio)
+- [Mijn FilmForge](https://awake-filmforge-preview.vercel.app/portaal)
+- [Contact](https://awake-filmforge-preview.vercel.app/contacts)
 
 ## Pricing (excl. BTW)
 - Social Clip 15–20s: € 400
