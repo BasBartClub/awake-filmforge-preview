@@ -6,6 +6,21 @@
       "source": "/pricing",
       "destination": "/prijzen",
       "permanent": false
+    },
+    {
+      "source": "/templates",
+      "destination": "/portfolio",
+      "permanent": false
+    },
+    {
+      "source": "/mijn-filmforge",
+      "destination": "/portaal",
+      "permanent": false
+    },
+    {
+      "source": "/mijn-filmforge/",
+      "destination": "/portaal",
+      "permanent": false
     }
   ]
 }

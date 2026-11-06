@@ -13,6 +13,8 @@ Production brand site: https://www.filmforge.nl/
 - [Projecten](https://awake-filmforge-preview.vercel.app/projects)
 - [Prijzen](https://awake-filmforge-preview.vercel.app/prijzen)
 - [Blog](https://awake-filmforge-preview.vercel.app/blog)
+- [Portfolio](https://awake-filmforge-preview.vercel.app/portfolio)
+- [Mijn FilmForge](https://awake-filmforge-preview.vercel.app/portaal)
 - [Contact](https://awake-filmforge-preview.vercel.app/contacts)
 
 ## Pricing (excl. BTW)
