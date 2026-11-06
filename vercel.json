@@ -3,23 +3,23 @@
   "headers": [],
   "redirects": [
     {
-      "source": "/pricing",
-      "destination": "/prijzen",
+      "source": "/awake-filmforge-preview/pricing",
+      "destination": "/awake-filmforge-preview/prijzen",
       "permanent": false
     },
     {
-      "source": "/templates",
-      "destination": "/portfolio",
+      "source": "/awake-filmforge-preview/templates",
+      "destination": "/awake-filmforge-preview/portfolio",
       "permanent": false
     },
     {
-      "source": "/mijn-filmforge",
-      "destination": "/portaal",
+      "source": "/awake-filmforge-preview/mijn-filmforge",
+      "destination": "/awake-filmforge-preview/portaal",
       "permanent": false
     },
     {
-      "source": "/mijn-filmforge/",
-      "destination": "/portaal",
+      "source": "/awake-filmforge-preview/mijn-filmforge/",
+      "destination": "/awake-filmforge-preview/portaal",
       "permanent": false
     }
   ]

@@ -30,8 +30,8 @@
           status: 'revisie',
           brief: 'Korte AI-promo voor social: 30 seconden, merktonaal, eindshot met logo. Voorbeeldproject voor deze preview.',
           deliverables: [
-            { name: 'First cut v1 (placeholder)', url: '/ff/og-home.jpg' },
-            { name: 'Revisie notes (dummy)', url: '/ff/ff-logo.svg' },
+            { name: 'First cut v1 (placeholder)', url: '/awake-filmforge-preview/ff/og-home.jpg' },
+            { name: 'Revisie notes (dummy)', url: '/awake-filmforge-preview/ff/ff-logo.svg' },
           ],
           notes: [
             { from: 'studio', at: '2026-11-01T10:00:00+01:00', text: 'First cut staat klaar voor review.' },
@@ -137,11 +137,11 @@
   function requireRole(role) {
     const sess = getSession();
     if (!sess) {
-      go('/portaal/');
+      go('/awake-filmforge-preview/portaal/');
       return null;
     }
     if (sess.role !== role) {
-      go(sess.role === 'admin' ? '/portaal/admin/' : '/portaal/klant/');
+      go(sess.role === 'admin' ? '/awake-filmforge-preview/portaal/admin/' : '/awake-filmforge-preview/portaal/klant/');
       return null;
     }
     return sess;
@@ -150,7 +150,7 @@
   function mountLogin(root) {
     const sess = getSession();
     if (sess) {
-      go(sess.role === 'admin' ? '/portaal/admin/' : '/portaal/klant/');
+      go(sess.role === 'admin' ? '/awake-filmforge-preview/portaal/admin/' : '/awake-filmforge-preview/portaal/klant/');
       return;
     }
     root.innerHTML = `
@@ -183,8 +183,8 @@
               <code>klant@filmforge.nl</code> / <code>FilmForge-Klant-2026</code>
             </div>
             <div class="ffq-row">
-              <a class="ffq-btn ghost" href="${BASE}/prijzen">Prijzen</a>
-              <a class="ffq-btn ghost" href="${BASE}/contacts">Contact</a>
+              <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/prijzen">Prijzen</a>
+              <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/contacts">Contact</a>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@
         return;
       }
       setSession({ email, role: u.role, name: u.name, at: Date.now() });
-      go(u.role === 'admin' ? '/portaal/admin/' : '/portaal/klant/');
+      go(u.role === 'admin' ? '/awake-filmforge-preview/portaal/admin/' : '/awake-filmforge-preview/portaal/klant/');
     });
   }
 
@@ -214,8 +214,8 @@
           <span class="ffq-muted">${esc(sess.email)}</span>
         </div>
         <div class="ffq-row">
-          <a class="ffq-btn ghost" href="${BASE}/prijzen">Prijzen</a>
-          <a class="ffq-btn ghost" href="${BASE}/contacts">Contact</a>
+          <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/prijzen">Prijzen</a>
+          <a class="ffq-btn ghost" href="${BASE}/awake-filmforge-preview/contacts">Contact</a>
           <button class="ffq-btn danger" type="button" id="ffq-out">Uitloggen</button>
         </div>
       </div>
@@ -228,7 +228,7 @@
   function bindLogout(root) {
     root.querySelector('#ffq-out')?.addEventListener('click', () => {
       setSession(null);
-      go('/portaal/');
+      go('/awake-filmforge-preview/portaal/');
     });
   }
 
