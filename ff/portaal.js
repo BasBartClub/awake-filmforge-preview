@@ -30,8 +30,8 @@
           status: 'revisie',
           brief: 'Korte AI-promo voor social: 30 seconden, merktonaal, eindshot met logo. Voorbeeldproject voor deze preview.',
           deliverables: [
-            { name: 'First cut v1 (placeholder)', url: '/ff/og-home.jpg' },
-            { name: 'Revisie notes (dummy)', url: '/ff/ff-logo.svg' },
+            { name: 'First cut v1 (placeholder)', url: BASE + '/ff/og-home.jpg' },
+            { name: 'Revisie notes (dummy)', url: BASE + '/ff/ff-logo.svg' },
           ],
           notes: [
             { from: 'studio', at: '2026-11-01T10:00:00+01:00', text: 'First cut staat klaar voor review.' },
