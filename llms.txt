@@ -1,0 +1,25 @@
+# FilmForge
+> AI-powered film production from Voorthuizen, Netherlands.
+
+FilmForge maakt AI-films, bedrijfsvideo’s, websites en webshops. AI maakt het beeld; editors maken de film.
+
+Contact: daniel@filmforge.nl · 06 22 88 44 63 · KvK 83071830
+Site: https://awake-filmforge-preview.vercel.app
+Production brand site: https://www.filmforge.nl/
+
+## Pages
+- [Home](https://awake-filmforge-preview.vercel.app/)
+- [Diensten](https://awake-filmforge-preview.vercel.app/services)
+- [Projecten](https://awake-filmforge-preview.vercel.app/projects)
+- [Prijzen](https://awake-filmforge-preview.vercel.app/prijzen)
+- [Blog](https://awake-filmforge-preview.vercel.app/blog)
+- [Contact](https://awake-filmforge-preview.vercel.app/contacts)
+
+## Pricing (excl. BTW)
+- Social Clip 15–20s: € 400
+- Promo 30–60s: € 900
+- Productvideo / Commercial 1–2 min: € 1.800
+- Serie 3–5 scènes: € 3.000
+- Campagne: vanaf € 6.000
+- AI-regie: € 500 / dag
+- Console Basis € 300 / mnd · Pro € 600 / mnd · Enterprise op offerte

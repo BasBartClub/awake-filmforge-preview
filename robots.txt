@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://awake-filmforge-preview.vercel.app/sitemap.xml
