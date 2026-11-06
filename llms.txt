@@ -13,6 +13,8 @@ Production brand site: https://www.filmforge.nl/
 - [Projecten](https://basbartclub.github.io/awake-filmforge-preview/projects)
 - [Prijzen](https://basbartclub.github.io/awake-filmforge-preview/prijzen)
 - [Blog](https://basbartclub.github.io/awake-filmforge-preview/blog)
+- [Portfolio](https://basbartclub.github.io/awake-filmforge-preview/portfolio)
+- [Mijn FilmForge](https://basbartclub.github.io/awake-filmforge-preview/portaal)
 - [Contact](https://basbartclub.github.io/awake-filmforge-preview/contacts)
 
 ## Pricing (excl. BTW)
