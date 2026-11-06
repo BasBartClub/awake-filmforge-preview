@@ -1,5 +1,6 @@
 
 (function () {
+  const BASE = (location.pathname.match(/^(\/awake-filmforge-preview)/) || ['', ''])[1];
   const KEY = 'ff.console.v1';
   const SESSION = 'ff.console.session';
   const STEPS = ['briefing', 'preproductie', 'first-cut', 'revisie', 'opgeleverd'];
@@ -113,7 +114,8 @@
     return location.pathname.replace(/\/$/, '') || '/';
   }
   function go(href) {
-    location.href = href;
+    if (href.startsWith('/') && BASE) location.href = BASE + href;
+    else location.href = href;
   }
   function pill(status) {
     return `<span class="ffq-pill s-${esc(status)}">${esc(STEP_LABEL[status] || status)}</span>`;
@@ -181,8 +183,8 @@
               <code>klant@filmforge.nl</code> / <code>FilmForge-Klant-2026</code>
             </div>
             <div class="ffq-row">
-              <a class="ffq-btn ghost" href="/prijzen">Prijzen</a>
-              <a class="ffq-btn ghost" href="/contacts">Contact</a>
+              <a class="ffq-btn ghost" href="${BASE}/prijzen">Prijzen</a>
+              <a class="ffq-btn ghost" href="${BASE}/contacts">Contact</a>
             </div>
           </div>
         </div>
@@ -212,8 +214,8 @@
           <span class="ffq-muted">${esc(sess.email)}</span>
         </div>
         <div class="ffq-row">
-          <a class="ffq-btn ghost" href="/prijzen">Prijzen</a>
-          <a class="ffq-btn ghost" href="/contacts">Contact</a>
+          <a class="ffq-btn ghost" href="${BASE}/prijzen">Prijzen</a>
+          <a class="ffq-btn ghost" href="${BASE}/contacts">Contact</a>
           <button class="ffq-btn danger" type="button" id="ffq-out">Uitloggen</button>
         </div>
       </div>
@@ -263,7 +265,7 @@
           .join('') || '<div class="ffq-empty">Nog geen berichten.</div>';
         const dls =
           (p.deliverables || [])
-            .map((d) => `<a href="${esc(d.url)}" download><span>${esc(d.name)}</span><span>Download</span></a>`)
+            .map((d) => `<a href="${esc(BASE + d.url)}" download><span>${esc(d.name)}</span><span>Download</span></a>`)
             .join('') || '<div class="ffq-empty">Nog geen deliverables.</div>';
         const fb = (p.feedback || [])
           .map((f) => `<div class="ffq-msg"><span class="who">Jouw feedback · ${esc(fmt(f.at))}</span><div>${esc(f.text)}</div></div>`)
